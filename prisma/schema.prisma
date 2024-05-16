@@ -10,12 +10,32 @@ datasource db {
   relationMode = "prisma"
 }
 
-model User {
+model Client {
   id String @id @default(uuid())
   age Int
+  
   name String 
   email String @unique
   userName String @unique
   userId String @unique
+  phone String @unique
+
+  
+
+
+}
+
+model teleMedicineProvider {
+  id String @id @default(uuid())
+  age Int
+  
+  name String 
+  email String @unique
+  userName String @unique
+  userId String @unique
+  phone String @unique
+  
+
+ 
 
 }
